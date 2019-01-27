@@ -78,7 +78,7 @@
               <div class="card-body text-center">
                 <i><img id="imageresource" src="img/p.png"/></i>
                 <hr class="my-4">
-                <div class="small text-black-50">Product One</div>
+                <div class="small text-black-50">SAP</div>
               </div>
             </div>
           </a>
@@ -88,7 +88,7 @@
               <a id="pop1" style="cursor:pointer;" >
             <div class="card py-4 h-100">
               <div class="card-body text-center">
-                <i><img id="imageresource" src="img/p.png"/></i>
+                <i><img id="imageresource1" src="img/p.png"/></i>
                 <hr class="my-4">
                   <div class="small text-black-50">Product Two</div>
                   </div>
@@ -100,7 +100,7 @@
               <a id="pop2" style="cursor:pointer;" >
             <div class="card py-4 h-100">
               <div class="card-body text-center">
-                <i><img id="imageresource" src="img/p.png"/></i>
+                <i><img id="imageresource2" src="img/p.png"/></i>
 
                 <hr class="my-4">
                 <div class="small text-black-50">Product Three</div>
@@ -190,7 +190,13 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="myModalLabel">Product information</h4>
+        <h4 class="modal-title" id="myModalLabel">- High absorption materials to be used in:<br>
+          1 - cultivation of arid lands (sandy soils - calcareous soils). <br>
+          2. Seed treatment for germination. <br>
+          3- Packaging of pesticides, fertilizers and foxins to maximize their utilization.<br>
+          4 - for medical purposes to absorb the water of urination and urination in women.<br>
+          5 - Agriculture in textiles.<br>
+          6 - Extraction of water from the industries of fermentation and petroleum and other.</h4>
       </div>
       <div class="modal-body">
         <img src="" id="imagepreview" style="width: 400px; height: 264px;" >
@@ -202,6 +208,49 @@
   </div>
 </div>
 
+<div class="modal fade" id="imagemodal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+    <h4 class="modal-title" id="myModalLabel">1- Supplies for textile and paper industries and drilling of wells.<br>
+2 - Bosch natural materials treatment and synthesis.<br>
+3 - Starch derivatives<br>
+     -Carboke Methyl Starch<br>
+     - Definitely confirmed<br>
+     - Cationic formation<br>
+4. Synthetic polymers that are soluble in water</h4>
+  </div>
+  <div class="modal-body">
+    <img src="" id="imagepreview1" style="width: 400px; height: 264px;" >
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="imagemodal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+    <h4 class="modal-title" id="myModalLabel">* Medical textiles
+Is a medical gauze for the healing of wounds and burns in general and the wounds of internal surgery during the operation of micro-surgical.<br>
+* Because the wound occurs on the inner wound and turns from tissue to gel material to prevent the attack of microorganisms on the wound.<br>
+* The solubility of liquids and internal enzymes in the body and there is no need to reopen the wound to remove these fabrics.</h4>
+  </div>
+  <div class="modal-body">
+    <img src="" id="imagepreview2" style="width: 400px; height: 264px;" >
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+  </div>
+</div>
+</div>
+</div>
+
 <script>
 $("#pop").on("click", function() {
    $('#imagepreview').attr('src', $('#imageresource').attr('src')); // here asign the image to the modal when the user click the enlarge link
@@ -209,13 +258,13 @@ $("#pop").on("click", function() {
 });
 
 $("#pop1").on("click", function() {
-   $('#imagepreview').attr('src', $('#imageresource').attr('src')); // here asign the image to the modal when the user click the enlarge link
-   $('#imagemodal').modal('show'); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
+   $('#imagepreview1').attr('src', $('#imageresource1').attr('src')); // here asign the image to the modal when the user click the enlarge link
+   $('#imagemodal1').modal('show'); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
 });
 
 $("#pop2").on("click", function() {
-   $('#imagepreview').attr('src', $('#imageresource').attr('src')); // here asign the image to the modal when the user click the enlarge link
-   $('#imagemodal').modal('show'); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
+   $('#imagepreview2').attr('src', $('#imageresource2').attr('src')); // here asign the image to the modal when the user click the enlarge link
+   $('#imagemodal2').modal('show'); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
 });
 </script>
 
